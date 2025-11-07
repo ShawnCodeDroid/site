@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO -->
+    <title>SmileLife Dental - Professional Dentist in Your City | Quality Dental Care</title>
+    <meta name="description" content="Expert dental care for the whole family. Cosmetic dentistry, cleanings, implants & emergency care. Accepting new patients. Call (555) 987-6543 for an appointment.">
+    <meta name="keywords" content="dentist, dental care, teeth cleaning, cosmetic dentistry, dental implants, family dentist, emergency dentist">
+    
+    <!-- Local Business SEO -->
+    <meta name="geo.region" content="US-ST">
+    <meta name="geo.placename" content="Your City">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SmileLife Dental - Professional Dental Care">
+    <meta property="og:description" content="Expert dental care with a gentle touch. Comprehensive services for your entire family.">
+    <meta property="og:url" content="https://yourdentalsite.com">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdentalsite.com">
+    
+    <!-- Mobile Optimization -->
+    <meta name="theme-color" content="#0A4D68">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0A4D68;
+            --primary-light: #0D7FA5;
+            --accent: #00A8CC;
+            --dark: #1a1a2e;
+            --gray: #555555;
+            --light-gray: #f8f9fa;
+            --white: #ffffff;
+            --cream: #fefefe;
+            --success: #28a745;
+            --gold: #D4AF37;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            background: var(--white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        .nav-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .phone-number {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .phone-number:hover {
+            color: var(--accent);
+        }
+
+        .cta-button {
+            padding: 12px 28px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 168, 204, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.3; }
+        }
+
+        .hero-content {
+            max-width: 700px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            animation: slideInLeft 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .hero p {
+            font-size: clamp(18px, 2.5vw, 22px);
+            margin-bottom: 30px;
+            opacity: 0.95;
+            line-height: 1.6;
+            animation: slideInLeft 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            animation: fadeIn 1s ease-out 0.4s both;
+        }
+
+        .btn {
+            padding: 16px 36px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255,255,255,0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* Trust Section */
+        .trust-section {
+            background: var(--light-gray);
+            padding: 50px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .trust-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            box-shadow: 0 4px 12px rgba(10, 77, 104, 0.2);
+        }
+
+        .trust-text {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: clamp(32px, 4vw, 44px);
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Services Section */
+        .services-section {
+            background: var(--white);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: var(--cream);
+            padding: 40px 30px;
+            border-radius: 12px;
+            border: 1px solid #e8e8e8;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary), var(--accent));
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(10, 77, 104, 0.15);
+            border-color: var(--accent);
+        }
+
+        .service-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: white;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(-5deg);
+        }
+
+        .service-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+
+        .service-description {
+            font-size: 15px;
+            color: var(--gray);
+            line-height: 1.7;
+        }
+
+        /* Why Choose Section */
+        .why-choose-section {
+            background: var(--light-gray);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            background: white;
+            padding: 35px 30px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e8e8e8;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .feature:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(10, 77, 104, 0.15);
+        }
+
+        .feature:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 36px;
+            color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .feature-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+
+        .feature-description {
+            font-size: 15px;
+            color: var(--gray);
+            line-height: 1.7;
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            background: var(--white);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: var(--cream);
+            padding: 35px 30px;
+            border-radius: 12px;
+            border: 1px solid #e8e8e8;
+            position: relative;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 80px;
+            color: var(--accent);
+            opacity: 0.1;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .testimonial-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(10, 77, 104, 0.15);
+        }
+
+        .testimonial-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .testimonial-stars {
+            color: var(--gold);
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            font-size: 15px;
+            color: var(--dark);
+            margin-bottom: 20px;
+            line-height: 1.8;
+            position: relative;
+        }
+
+        .testimonial-author {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .testimonial-info {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+        }
+
+        .contact-section .section-title {
+            color: white;
+        }
+
+        .contact-section .section-subtitle {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 40px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto 50px;
+        }
+
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 30px 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+        }
+
+        .contact-item-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .contact-item-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .contact-item-text {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        .form-input,
+        .form-textarea,
+        .form-select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: inherit;
+            background: rgba(255,255,255,0.95);
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus,
+        .form-select:focus {
+            outline: none;
+            border-color: white;
+            background: white;
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-button {
+            width: 100%;
+            padding: 16px;
+            background: white;
+            color: var(--primary);
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-button:hover {
+            background: var(--cream);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255,255,255,0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 50px 20px 30px;
+        }
+
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            font-size: 15px;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.8;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-contact {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .contact-form {
+                padding: 30px 20px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "SmileLife Dental",
+        "image": "https://yourdentalsite.com/logo.jpg",
+        "@id": "https://yourdentalsite.com",
+        "url": "https://yourdentalsite.com",
+        "telephone": "+15559876543",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "456 Medical Plaza",
+            "addressLocality": "Your City",
+            "addressRegion": "ST",
+            "postalCode": "12345",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.7128,
+            "longitude": -74.0060
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <div class="logo-icon">🦷</div>
+                <span>SmileLife Dental</span>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+            <div class="nav-contact">
+                <a href="tel:+15559876543" class="phone-number">
+                    📞 (555) 987-6543
+                </a>
+                <a href="#appointment" class="cta-button">Book Appointment</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">Accepting New Patients</div>
+                    <h1>Your Smile Deserves Expert Care</h1>
+                    <p>Comprehensive dental services for the whole family. From routine cleanings to advanced cosmetic procedures, we provide gentle, professional care you can trust.</p>
+                    <div class="hero-buttons">
+                        <a href="#appointment" class="btn btn-primary">Schedule Appointment</a>
+                        <a href="tel:+15559876543" class="btn btn-secondary">Call (555) 987-6543</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-section">
+            <div class="container">
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <div class="trust-icon">⭐</div>
+                        <div class="trust-text">4.9/5 Rating</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">🏆</div>
+                        <div class="trust-text">Award Winning</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">✓</div>
+                        <div class="trust-text">Insurance Accepted</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">🚨</div>
+                        <div class="trust-text">Emergency Care</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive dental care tailored to your needs</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">🦷</div>
+                        <h3 class="service-title">General Dentistry</h3>
+                        <p class="service-description">Routine check-ups, cleanings, and preventive care to keep your smile healthy and bright.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">✨</div>
+                        <h3 class="service-title">Cosmetic Dentistry</h3>
+                        <p class="service-description">Whitening, veneers, and smile makeovers to help you achieve the smile you've always wanted.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3 class="service-title">Restorative Care</h3>
+                        <p class="service-description">Crowns, bridges, and fillings to restore function and aesthetics to damaged teeth.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">💎</div>
+                        <h3 class="service-title">Dental Implants</h3>
+                        <p class="service-description">Permanent tooth replacement solutions that look and feel like natural teeth.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">👶</div>
+                        <h3 class="service-title">Pediatric Dentistry</h3>
+                        <p class="service-description">Gentle, kid-friendly care to establish healthy dental habits from an early age.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🚑</div>
+                        <h3 class="service-title">Emergency Services</h3>
+                        <p class="service-description">Same-day appointments available for dental emergencies and urgent care needs.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Choose SmileLife Dental?</h2>
+                    <p class="section-subtitle">Experience the difference of patient-centered care</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">🎓</div>
+                        <h3 class="feature-title">Expert Team</h3>
+                        <p class="feature-description">Board-certified dentists with years of experience and continuing education.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🏥</div>
+                        <h3 class="feature-title">Modern Technology</h3>
+                        <p class="feature-description">State-of-the-art equipment for accurate diagnoses and comfortable treatments.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">💳</div>
+                        <h3 class="feature-title">Flexible Payment</h3>
+                        <p class="feature-description">Multiple payment options and financing plans to fit your budget.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">😊</div>
+                        <h3 class="feature-title">Gentle Care</h3>
+                        <p class="feature-description">Anxiety-free dentistry with sedation options and a calming environment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Patient Testimonials</h2>
+                    <p class="section-subtitle">Hear from our satisfied patients</p>
+                </div>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">Dr. Smith and the team at SmileLife are absolutely wonderful. They made my dental implant procedure comfortable and stress-free. Couldn't be happier with my new smile!</p>
+                        <div class="testimonial-author">Jennifer Martinez</div>
+                        <div class="testimonial-info">Patient since 2021</div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">As someone who was terrified of dentists, I finally found a practice that makes me feel comfortable. The staff is patient, professional, and truly caring.</p>
+                        <div class="testimonial-author">Michael Chen</div>
+                        <div class="testimonial-info">Patient since 2020</div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">My whole family goes to SmileLife. They're great with kids and adults alike. The office is clean, modern, and the appointments are always on time.</p>
+                        <div class="testimonial-author">Sarah Thompson</div>
+                        <div class="testimonial-info">Patient since 2019</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="appointment">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Schedule Your Visit</h2>
+                    <p class="section-subtitle">We're here to help you achieve optimal oral health</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📞</div>
+                        <h3 class="contact-item-title">Call Us</h3>
+                        <div class="contact-item-text">
+                            <a href="tel:+15559876543">(555) 987-6543</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📧</div>
+                        <h3 class="contact-item-title">Email</h3>
+                        <div class="contact-item-text">
+                            <a href="mailto:info@smilelifedental.com">info@smilelifedental.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <h3 class="contact-item-title">Visit Us</h3>
+                        <div class="contact-item-text">
+                            456 Medical Plaza<br>Your City, ST 12345
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="appointmentForm">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="service">Service Needed</label>
+                        <select id="service" name="service" class="form-select">
+                            <option value="">Select a service</option>
+                            <option value="checkup">Routine Check-up</option>
+                            <option value="cleaning">Teeth Cleaning</option>
+                            <option value="cosmetic">Cosmetic Consultation</option>
+                            <option value="implants">Dental Implants</option>
+                            <option value="emergency">Emergency Care</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Additional Information</label>
+                        <textarea id="message" name="message" class="form-textarea"></textarea>
+                    </div>
+                    <button type="submit" class="form-button">Request Appointment</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SmileLife Dental</h3>
+                    <p>Providing exceptional dental care with a gentle touch. Your smile is our passion.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Office Hours</h3>
+                    <div class="footer-links">
+                        <span>Monday - Friday: 8am - 5pm</span>
+                        <span>Saturday: 9am - 2pm</span>
+                        <span>Sunday: Closed</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#services">Services</a>
+                        <a href="#testimonials">Testimonials</a>
+                        <a href="#appointment">Book Appointment</a>
+                        <a href="#">Insurance & Payment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SmileLife Dental. All rights reserved. | Licensed & Insured</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            console.log('Appointment Request:', data);
+            alert('Thank you! We\'ll contact you within 24 hours to confirm your appointment.');
+            this.reset();
+        });
+
+        // Mobile menu (placeholder - would need full implementation)
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            alert('Mobile menu would open here');
+        });
+    </script>
+</body>
+</html>
